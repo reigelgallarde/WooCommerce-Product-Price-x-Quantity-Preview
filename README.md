@@ -29,14 +29,18 @@ WooCommerce 3.0 or later.
 3. No Setup needed.
 
 # Frequently asked questions
+
 * I don't find any setup?
+
 Yes! You really don't need a setup for this plugin.
 
 * WPML ready?
+
 Yes! You must create your `.po` file. If you want to submit a `.po` file, I will be happy to add it on next release.
 Contact me using this [form](http://reigelgallarde.me/services/).
 
 * How to change "Product Total" to my text of choice?
+
 You can paste this code to your current theme's functions.php:
 
 ````
@@ -48,10 +52,12 @@ function ppqp_price_html( $ppqp_price_html ) {
 This is an example that will change "Product Total" to "Order Total".
 
 * This plugin is not working, how can I reach you?
+
 First of, this plugin relies mainly onjavascript. If you have javascript error your page, this will not work.
 If you still can't make it work and wanted to contact me, you can reach me on this [form](http://reigelgallarde.me/services/).
 
 * Will this work with other plugins of WooCommerce?
+
 It will, or it will not. That really depends on how those plugins are made.
 But I can help you out if you contact me using this [form](http://reigelgallarde.me/services/).
 

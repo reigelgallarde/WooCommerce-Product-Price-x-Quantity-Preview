@@ -5,7 +5,7 @@
  * Description: An extension to WooCommerce that will preview price total when quantity changes on the product page.
  * Author: Reigel Gallarde
  * Author URI: http://reigelgallarde.me
- * Version: 1.1
+ * Version: 1.2
  * Tested up to: WooCommerce 3
  *
  *
@@ -39,7 +39,7 @@ if (!class_exists('WooCommercePPQP')) :
 class WooCommercePPQP {
 	
 	protected static $_instance = null;
-	protected static $version = '1.1';
+	protected static $version = '1.2';
 	
 	public static function instance() {
 		if ( is_null( self::$_instance ) ) {
@@ -55,7 +55,11 @@ class WooCommercePPQP {
 	}
 	
 	public function load_plugin_textdomain(){
+		$locale = is_admin() && function_exists( 'get_user_locale' ) ? get_user_locale() : get_locale();
+		$locale = apply_filters( 'plugin_locale', $locale, 'woo-ppqp' );
+		
 		unload_textdomain( 'woo-ppqp' );
+		load_textdomain( 'woo-ppqp', WP_LANG_DIR . '/plugins/woo-ppqp-' . $locale . '.mo' );
 		load_plugin_textdomain( 'woo-ppqp', false, plugin_basename( dirname( __FILE__ ) ) . '/lang' );
 		
 	}

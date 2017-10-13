@@ -4,7 +4,7 @@ Donate link: http://reigelgallarde.me
 Tags: dynamic price, price display, woocommerce, total price, final price, price times quantity
 Requires at least: 3.8
 Tested up to: 4.8
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html	
 
@@ -26,6 +26,7 @@ This plugin uses WooCommerce currency options settings, so you don't have to wor
 
 >* Support to WooCommerce Variable product type. 
 >* Support to [WooCommerce Dynamic Pricing & Discounts](https://codecanyon.net/item/woocommerce-dynamic-pricing-discounts/7119279) by RightPress
+>* Custom buttons +/- supported. Must be accessible via selector `".quantity .plus"` and `".quantity .minus"`.
 >* More features and integrations is coming.
 
 >Get [WooCommerce Product Price x Quantity Preview Addons](http://reigelgallarde.me/product/woocommerce-product-price-x-quantity-preview/) now.
@@ -76,6 +77,8 @@ But I can help you out if you contact me using this [form](http://reigelgallarde
 
 == Changelog ==
 
+= 1.2 =
+>* added support for custom +/- on quantity.
 = 1.1 =
 >* added WPML support.
 = 1.0 =

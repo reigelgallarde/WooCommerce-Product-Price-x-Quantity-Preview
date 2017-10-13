@@ -9,6 +9,9 @@
 		this.current_product 		= 0;
 		
 		$form.on( 'input.preview_price', '[name="quantity"]', 	{ppqp: this}, this.onChange );
+		$form.on( 'click', '.quantity .plus,.quantity .minus', 	function(){
+			$form.find( '[name="quantity"]' ).trigger('input.preview_price');
+		} );
 	};
 	
 	ppqp.prototype.calculatePrice = function ( event ) {
